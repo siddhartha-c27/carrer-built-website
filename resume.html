@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        
+      <!-- <style>
+            .heading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1300px;
+    
+    padding: 20px 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.heading a {
+    position: relative;
+    font-size: x-large;
+    color: brown;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+
+}
+.logo{
+    font-size: 2em;
+    color: brown;
+    user-select: none;
+}
+.btn-loginpopup{
+    width: 130px;
+    height: 50px;
+    background-color: aqua;
+    border:2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.heading .btn-loginpopup:hover{
+    background: #fff;
+    color: aqua;
+
+}
+.formi
+{
+    width: 100%;
+    height: 120vh;
+    justify-content: center;
+    align-items: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #162938;
+    margin :30px 0;
+    margin-bottom: 40px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+}
+.input-box input{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.heading a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 80%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform  .5s;
+}
+.heading a:hover::after{
+    transform: scaleX(1);
+}
+
+.ma .btn{
+  text-align: left;
+  background-color: blueviolet;
+}
+.ma h3{
+    font-size: 1.2em;
+    color: blueviolet;
+}
+.ma{
+    width:100%;
+    font-size: 2em;
+}
+            body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200vh;
+    min-width:100%;
+            }
+    .myform{
+        width: 100%;
+    }
+    
+            .heading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1300px;
+    
+    padding: 20px 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.foot .btn{
+  text-align: left;
+  background-color: blueviolet;
+  color: #fff;
+}
+.heading a {
+    position: relative;
+    font-size: x-large;
+    color: brown;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+
+}
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+.btn-loginpopup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border :2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.heading .btn-loginpopup:hover{
+    background: #fff;
+    color: aqua;
+
+}
+.heading a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 80%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform  .5s;
+}
+.heading a:hover::after{
+    transform: scaleX(1);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+    
+    
+   
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0  30px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition:height .2s ease;
+}
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+    height: 410px;
+    margin-bottom: 40px;
+}
+.wrapper.active{
+    height: 920px;
+}
+
+.form-box h2{
+    font-size: 2em;
+    color:#fff;
+    text-align: center;
+    margin-top: 1%;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid #162938;
+    margin :30px 0;
+    margin-bottom: 40px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.remember-forgot .input{
+    margin-bottom: 90%;
+}
+.ma{
+    font-size: 1.6em;
+    
+}
+
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+
+}
+.Remember-forgot a{
+    color: #162938;
+    text-decoration: none;
+    height: 80px;
+}
+.Remember-forgot btn{
+    margin-bottom: 80px;
+}
+.Remember-forgot a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size:1em ;
+    color: #fff;
+
+}
+.login-register  p a{
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+.foot .btn{
+     width: 230px;
+    height: 90px;
+    background-color:cadetblue;    
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 500;
+    transition: .5s;
+    
+}
+.login-register a{
+    color: darkcyan;
+    font-size: 2em;
+
+}
+.login-register{
+    justify-content: center;
+    align-items: center;
+}
+.foot{
+    margin-top: 290px;
+    margin-right: 900px;
+}
+.ma h1{
+    color: #fff;
+    font-size: 5em;
+    margin-left: 300px;
+    margin-top: 100px;
+
+}
+.ma h2{
+    color: #fff;
+    font-size: 2em;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+.steps_grid{
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+
+}
+.steps_card{
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0 ,0 ,0, 0.1);
+
+}
+.foo{
+    width: 120px;
+    text-align: left;
+}
+.foo .btn{
+    color: #fff;
+    background-color: blueviolet;
+}
+.steps_card span{
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 5px 11px;
+    font-size: 1.5rem;
+    border-radius: 100%;
+}
+.steps_card:nth-child(1)  span{
+    color: brown;
+    background-color: aliceblue;
+
+}
+.steps_card:nth-child(2)  span{
+    color: aquamarine;
+    background-color: aliceblue;
+    
+}.steps_card:nth-child(3)  span{
+    color: blueviolet;
+    background-color: aliceblue;
+    
+}.steps_card:nth-child(4)  span{
+    color: chocolate;
+    background-color: aliceblue;
+    
+}
+.foot{
+    margin-left: 50px;
+    width: 100%;
+}
+
+
+
+        </style>-->
+        <style>
+          /* --- Modern Variables & Reset --- */
+:root {
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --bg-light: #f8fafc;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+    --white: #ffffff;
+    --border: #e2e8f0;
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+* { box-sizing: border-box; transition: all 0.2s ease; }
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* --- Navigation --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+.logo { font-size: 1.5rem; font-weight: 800; color: var(--text-dark); }
+.logo span { color: var(--primary); }
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    margin-right: 2rem;
+    font-weight: 500;
+}
+
+.nav-links a:hover { color: var(--primary); }
+
+/* --- Layout Container --- */
+.container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    border-left: 5px solid var(--primary);
+    padding-left: 15px;
+}
+
+/* --- Form Layout & Alignment --- */
+.form-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.form-section h3 {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive Grid for Inputs */
+.grid-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+input, select, textarea {
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* --- Tech Stack Chips --- */
+.checkbox-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f1f5f9;
+    padding: 8px 16px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    border: 1px solid transparent;
+}
+
+.chip:hover { background: #e2e8f0; }
+
+.chip input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--primary);
+}
+
+/* --- Experience & Buttons --- */
+textarea {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+}
+
+.generate-btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.generate-btn:hover {
+    background: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+
+
+/* 1*/
+.heading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1300px;
+    
+    padding: 20px 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.heading a {
+    position: relative;
+    font-size: x-large;
+    color: brown;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+
+}
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+.btn-loginpopup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border :2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.heading .btn-loginpopup:hover{
+    background: #fff;
+    color: aqua;
+
+}
+.heading a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 80%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform  .5s;
+}
+.heading a:hover::after{
+    transform: scaleX(1);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    background-size: cover;
+    
+    
+    
+    
+   
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0  30px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition:height .2s ease;
+}
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+    height: 410px;
+    margin-bottom: 40px;
+}
+.wrapper.active{
+    height: 920px;
+}
+
+.form-box h2{
+    font-size: 2em;
+    color:#fff;
+    text-align: center;
+    margin-top: 1%;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border-bottom: 2px solid #162938;
+    margin :30px 0;
+    margin-bottom: 40px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.remember-forgot .input{
+    margin-bottom: 90%;
+}
+
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+
+}
+.Remember-forgot a{
+    color: #162938;
+    text-decoration: none;
+    height: 80px;
+}
+.Remember-forgot btn{
+    margin-bottom: 80px;
+}
+.Remember-forgot a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size:1em ;
+    color: #fff;
+
+}
+.login-register  p a{
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+.foot .btn{
+     width: 230px;
+    height: 90px;
+    background-color:cadetblue;    
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 500;
+    transition: .5s;
+    
+}
+.login-register a{
+    color: darkcyan;
+    font-size: 2em;
+
+}
+.login-register{
+    justify-content: center;
+    align-items: center;
+}
+.foot{
+    margin-top: 490px;
+    margin-right: 900px;
+}
+
+.ma h2{
+    color: #fff;
+    font-size: 4em;
+    margin-left: 900px;
+    margin-top: 200px;
+    
+    
+}
+.steps_grid{
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+
+}
+.steps_card{
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0 ,0 ,0, 0.1);
+
+}
+.steps_card span{
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 5px 11px;
+    font-size: 1.5rem;
+    border-radius: 100%;
+}
+.steps_card:nth-child(1)  span{
+    color: brown;
+    background-color: aliceblue;
+
+}
+.steps_card:nth-child(2)  span{
+    color: aquamarine;
+    background-color: aliceblue;
+    
+}.steps_card:nth-child(3)  span{
+    color: blueviolet;
+    background-color: aliceblue;
+    
+}.steps_card:nth-child(4)  span{
+    color: chocolate;
+    background-color: aliceblue;
+
+    
+}
+
+    
+}
+
+        </style>
+        
+
+    </head>
+    <body>
+          <header class="heading">
+            <h2 class="logo" style="color:blueviolet;font:lighter;">CareerBuilt</h2>
+        
+                <a href="home.html">home</a>
+                <a href="service.html">service</a>
+                <a href="contact.html">contacts</a>
+           <a href="u.html"> <button class="btn-loginpopup">login</button></a>
+
+            
+        </header>
+        <main class="container">
+                                    <a href="n.html"><img src=" https://thumbs.dreamstime.com/b/left-arrow-back-button-vector-icon-modern-design-style-web-site-mobile-app-170757652.jpg" height="50px"></a>
+
+        <header><br><br><br>
+            <h1>Resume  <small></small></h1>
+
+
+        </header><br>
+
+        <form class="resume-form">
+            <!-- Personal Info Section -->
+            <section class="form-section">
+                <h3 style="color: black;"><b>Personal Information</b></h3>
+                <div class="grid-row">
+                    <div class="input-group">
+                        <label>First Name</label>
+                        <input type="text" placeholder=" ">
+                    </div>
+                    <div class="input-group">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="">
+                    </div>
+                </div>
+                <div class="grid-row">
+                    <div class="input-group">
+                        <label>Target GPA</label>
+                        <input type="number" step="0.1" placeholder=" ">
+                    </div>
+                    <div class="input-group">
+                        <label>City/Location</label>
+                        <select>
+                            <option>San Francisco, CA</option>
+                            <option>New York, NY</option>
+                            <option>Chicago, IL</option>
+<option>Los Angeles, CA</option>
+<option>Houston, TX</option>
+<option>Phoenix, AZ</option>
+<option>Philadelphia, PA</option>
+<option>San Antonio, TX</option>
+<option>San Diego, CA</option>
+<option>Dallas, TX</option>
+<option>Austin, TX</option>
+<option>Miami, FL</option>
+<option>Seattle, WA</option>
+<option>Boston, MA</option>
+<option>Washington, DC</option>
+<option>Denver, CO</option>
+<option>Atlanta, GA</option>
+<option>Las Vegas, NV</option>
+option>Fort Worth, TX</option>
+<option>San Jose, CA</option>
+<option>Charlotte, NC</option>
+<option>Columbus, OH</option>
+<option>Indianapolis, IN</option>
+<option>Nashville, TN</option>
+<option>Oklahoma City, OK</option>
+<option>El Paso, TX</option>
+<option>Portland, OR</option>
+<option>Detroit, MI</option>
+<option>Memphis, TN</option>
+<option>Louisville, KY</option>
+<option>Baltimore, MD</option>
+<option>Milwaukee, WI</option>
+<option>Albuquerque, NM</option>
+<option>Tucson, AZ</option>
+<option>Fresno, CA</option>
+<option>Sacramento, CA</option>
+<option>Kansas City, MO</option>
+<option>Mesa, AZ</option>
+<option>Omaha, NE</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tech Stack Section -->
+            <section class="form-section">
+                <h3 style="color: #1e293b;">Technical Expertise</h3>
+                <div class="checkbox-grid">
+                    <label class="chip"><input type="checkbox"> Python (Django/Flask)</label>
+                    <label class="chip"><input type="checkbox"> Java (Spring Boot)</label>
+                    <label class="chip"><input type="checkbox"> R Programming</label>
+                    <label class="chip"><input type="checkbox"> HTML5/CSS3/JS</label>
+                    <label class="chip"><input type="checkbox"> Kubernetes & Docker</label>
+                    <label class="chip"><input type="checkbox"> AWS/Azure Cloud</label>
+                </div>
+            </section>
+
+            <!-- Complex Experience Section -->
+            <section class="form-section">
+                <h3 style="color: black;">Professional Experience</h3>
+                <div class="exp-block">
+                    <textarea rows="4" placeholder="')"></textarea>
+                </div>
+
+            </section>
+
+
+
+        </form>
+
+    </main>
+    <footer class="floo">
+                                                                          <a href="p.html"><button class="btn btn-primary">submit</button></a>
+
+
+    </footer>
+
+
+
+
+
+        </body>
+</html>

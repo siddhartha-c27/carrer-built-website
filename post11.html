@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+             body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200vh;
+             }
+             .heading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1300px;
+    
+    padding: 20px 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.heading a {
+    position: relative;
+    font-size: x-large;
+    color: brown;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+
+}
+.logo{
+    font-size: 2em;
+    color: brown;
+    user-select: none;
+}
+.btn-loginpopup{
+    width: 130px;
+    height: 50px;
+    background-color: aqua;
+    border:2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.ma .btn{
+  text-align: left;
+  background-color: blueviolet;
+}
+.heading .btn-loginpopup:hover{
+    background: #fff;
+    color: aqua;
+
+}.ma{
+    width:100%;
+}
+.heading a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 80%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform  .5s;
+}
+.heading a:hover::after{
+    transform: scaleX(1);
+}
+             .ma h3{
+    font-size: 3em;
+    color: blueviolet;
+
+}
+
+.steps_card span{
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 5px 11px;
+    font-size: 1.5rem;
+    border-radius: 100%;
+}
+.steps_card:nth-child(1)  span{
+    color: brown;
+    background-color: aliceblue;
+
+}
+.steps_card:nth-child(2)  span{
+    color: aquamarine;
+    background-color: aliceblue;
+    
+}.steps_card:nth-child(3)  span{
+    color: blueviolet;
+    background-color: aliceblue;
+    
+}.steps_card:nth-child(4)  span{
+    color: chocolate;
+    background-color: aliceblue;
+    
+}
+.steps_card h4{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color:var(--text-dark);
+
+}
+.ma .btn{
+    width: 130;
+    height: 330;
+    color: #fff;
+    background-color: mediumslateblue;
+
+}
+.steps_card p{
+    color: var(--text-light);
+}
+.steps_card{
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0 ,0 ,0, 0.1);
+
+
+}
+
+  </style>
+
+    
+</head>
+<body>
+   <header class="heading">
+            <h2 class="logo">CareerBuilt</h2>
+        
+                <a href="home.html">home</a>
+                <a href="service.html">service</a>
+                                <a href="contact.html">contacts</a>
+            <a href="u.html">    <button class="btn-loginpopup">login</button></a>
+   </header>
+   <main class="ma">
+
+            
+    
+        
+<table class="table" width="100%" cellpadding="2" cellspacing="2">
+  <thead>
+    
+      <th scope="col" style="color: black;"><a href="marketing.html" style="color: #333;font-size: x-large;">UX andUI design       </a></th>
+     <th scope="col"><a href="8.html" style="color: #333;font-size: x-large">            Graphic and visual design   </a></th>
+      <th scope="col"><a href="9.html" style="color: #333;font-size: x-large">       Animation Specilization         </a></th>
+      <th scope="col"><a href="10.html" style="color: #333;font-size: x-large">     Design leadership           </a></th>
+    </tr>
+  </thead>
+
+</table>
+
+
+<h3>posts</h3>
+            <a href="Design.html"><img src=" https://thumbs.dreamstime.com/b/left-arrow-back-button-vector-icon-modern-design-style-web-site-mobile-app-170757652.jpg" height="50px"></a>
+
+<div class="steps_grid">
+        <div class="steps_card">
+            <span><ion-icon name="person"></ion-icon></span>
+                <h4>          Animation Director                          </h4>
+                                <p>package: 22 LPA</p>
+                <p>mimimum 2 years of experience</p>
+                               
+                    <a href="apply.html"><button class="btn">Apply</button></a>
+
+                                </div>
+                                </div>
+                                <div class="steps_grid">
+        <div class="steps_card">
+            <span><ion-icon name="person"></ion-icon></span>
+                <h4>        Technical Director (TD) - Animation                                 </h4>
+                                <p>package: 12 LPA</p>
+                <p>mimimum 3 years of experience</p>
+                               
+                    <a href="apply.html"><button class="btn">Apply</button></a>
+
+                                </div>
+                                </div>
+                                <div class="steps_card">
+            <span><ion-icon name="person"></ion-icon></span>
+                <h4>  Technical Director (TD) - Animation                      </h4>
+                                <p>package: 20 LPA</p>
+                <p>mimimum 4 years of experience</p>
+                               
+                    <a href="apply.html"><button class="btn">Apply</button></a>
+
+                                </div>
+                                </div>
+                                
+
+
+                                         <div class="steps_card">
+            <span><ion-icon name="person"></ion-icon></span>
+                <h4> Character Animator (3D/2D)                        </h4>
+                                <p>package: 20 LPA</p>
+                <p>mimimum 4 years of experience</p>
+                               
+                    <a href="apply.html"><button class="btn">Apply</button></a>
+
+                                </div>
+                                </div>
+
+
+
+                                
+
+                                         <div class="steps_card">
+            <span><ion-icon name="person"></ion-icon></span>
+                <h4>      Animation Supervisor                </h4>
+                                <p>package: 20 LPA</p>
+                <p>mimimum 4 years of experience</p>
+                               
+                    <a href="apply.html"><button class="btn">Apply</button></a>
+
+                                </div>
+                                </div>
+
+
+
+                                
+                                
+
+                            
+
+                            
+                                </main>
+                                </body>
+                                </html>
+

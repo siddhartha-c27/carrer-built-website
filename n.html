@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        
+        <style>
+            .heading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1300px;
+    
+    padding: 20px 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.heading a {
+    position: relative;
+    font-size: x-large;
+    color: brown;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+
+}
+.logo{
+    font-size: 2em;
+    color: brown;
+    user-select: none;
+}
+.btn-loginpopup{
+    width: 130px;
+    height: 50px;
+    background-color: aqua;
+    border:2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.heading .btn-loginpopup:hover{
+    background: #fff;
+    color: aqua;
+
+}
+.heading a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 80%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform  .5s;
+}
+.heading a:hover::after{
+    transform: scaleX(1);
+}
+            body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200vh;
+   
+}
+            .steps_grid{
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+    padding:20px;
+
+}
+.ma h3{
+    font-size: 3em;
+    color: blueviolet;
+
+}
+.steps_card span{
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 5px 11px;
+    font-size: 1.5rem;
+    border-radius: 100%;
+}
+.steps_card:nth-child(1)  span{
+    color: brown;
+    background-color: aliceblue;
+
+}
+.steps_card:nth-child(2)  span{
+    color: aquamarine;
+    background-color: aliceblue;
+    
+}.steps_card:nth-child(3)  span{
+    color: blueviolet;
+    background-color: aliceblue;
+    
+}.steps_card:nth-child(4)  span{
+    color: chocolate;
+    background-color: aliceblue;
+    
+}
+.steps_card h4{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color:var(--text-dark);
+
+}
+.ma .btn{
+    width: 130;
+    height: 330;
+    color: #fff;
+    background-color: mediumslateblue;
+
+}
+.steps_card p{
+    color: var(--text-light);
+}
+.steps_card{
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0 ,0 ,0, 0.1);
+
+
+}
+
+        </style>
+
+    </head>
+    <body>
+         <header class="heading">
+            <h2 class="logo">CareerBuilt</h2>
+        
+                <a href="home.html">home</a>
+                <a href="service.html">service</a>
+                <a href="contact.html">contacts</a>
+            <a href="u.html">    <button class="btn-loginpopup">login</button></a>
+            
+        </header>
+
+
+
+
+
+            <main class="ma">
+                <section class="steps" id="about">
+                    <div class=" section_container steps_container">
+                        <h3 class="section_header">
+                            Get hired in 4 <span>Quick easy steps</span>
+                        </h3>
+                        <p class="section_description">
+                            follow,our simple,step by step guide to quickly land yourdream job and start your
+                            new carrer journey
+                        </p>
+                        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+                        <div class="steps_grid">
+                            <div class="steps_card">
+                                <span><ion-icon name="person"></ion-icon></span>
+                                <h4>create an account</h4>
+                                <p>sign up with a just few clicks to unlock exclusive
+                                    access to a world of job oppurtunities and landing your dream job
+                                    its quickly and easy.
+                                </p>
+                                    <a href="u.html"><button class="btn">login</button></a>
+
+                                </div>
+                                </div>
+                                  <div class="steps_grid">
+                                    <div class="steps_card">
+                                
+                                <span><ion-icon name="browsers"></ion-icon></span>
+                                <h4>upload cv/resume</h4>
+                                <p>sign up with a just few clicks to unlock exclusive
+                                    access to a world of job oppurtunities and landing your dream job
+                                    its quickly and easy.
+                                </p>
+                                   <a href="resume.html"><button class="btn">upload</button></a>
+
+                                </div>
+                                </div>
+
+
+
+
+                                <div class="steps_grid">
+                                    <div class="steps_card">
+
+                
+            
+                                
+                                <span><ion-icon name="search"></ion-icon></span>
+                                <h4>search job</h4>
+                                <p>dive into our job database toilerd to match your skills and performance
+                                    with our advanced featurces
+                                </p>
+                                               <a href="p.html"><button class="btn">let's go</button></a>
+
+
+                                </div>
+                                </div>
+                              
+                                <div class="steps_grid">
+                                    <div class="steps_card">
+                                
+                                <span><ion-icon name="cloud-done"></ion-icon></span>
+                                <h4>get job</h4>
+                                <p>dive into our job database toilerd to match your skills and performance
+                                    with our advanced featurces
+                                </p>
+                                
+                                </div>
+                                </div>
+
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+               <a href="p.html"><button class="btn">next</button></a>
+            </main>
+            
+            </body>
+            </html>
