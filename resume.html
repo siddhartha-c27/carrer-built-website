@@ -953,7 +953,7 @@ option>Fort Worth, TX</option>
 
 
         </form>
-            <script>
+     <!--       <script>
 document.getElementById('resumeForm').addEventListener('submit', function(e){
   e.preventDefault();
   if(!this.checkValidity()){
@@ -961,6 +961,24 @@ document.getElementById('resumeForm').addEventListener('submit', function(e){
     this.reportValidity();
     return;
   }
+  alert("Resume Submitted Successfully!");
+  localStorage.setItem('resumeSubmitted', 'true');
+  window.location.href = "jobs.html";
+});
+</script>--><script>
+document.getElementById('resumeForm').addEventListener('submit', function(e){
+  e.preventDefault();
+
+  let firstName = document.getElementById('firstName').value.trim();
+  let lastName = document.getElementById('lastName').value.trim();
+  let gpa = document.getElementById('gpa').value.trim();
+  let email = document.getElementById('email').value.trim();
+
+  if(firstName === "" || lastName === "" || gpa === "" || email === ""){
+    alert("Anni details fill chey! Empty ga vaddu");
+    return;
+  }
+
   alert("Resume Submitted Successfully!");
   localStorage.setItem('resumeSubmitted', 'true');
   window.location.href = "jobs.html";
