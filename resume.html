@@ -862,24 +862,24 @@ body{
 
         </header><br>
 
-        <form class="resume-form">
+        <form id ="resumeForm" class="resume-form">
             <!-- Personal Info Section -->
             <section class="form-section">
                 <h3 style="color: black;"><b>Personal Information</b></h3>
                 <div class="grid-row">
                     <div class="input-group">
                         <label>First Name</label>
-                        <input type="text" placeholder=" ">
+                        <input type="text" id="firstName" placeholder="FirstName ">
                     </div>
                     <div class="input-group">
                         <label>Last Name</label>
-                        <input type="text" placeholder="">
+                        <input type="text" id="last name" placeholder="last name">
                     </div>
                 </div>
                 <div class="grid-row">
                     <div class="input-group">
                         <label>Target GPA</label>
-                        <input type="number" step="0.1" placeholder=" ">
+                        <input type="number"  id="gpa"step="0.1" placeholder="gpa ">
                     </div>
                     <div class="input-group">
                         <label>City/Location</label>
@@ -953,6 +953,19 @@ option>Fort Worth, TX</option>
 
 
         </form>
+            <script>
+document.getElementById('resumeForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  if(!this.checkValidity()){
+    alert("Anni details fill chey!");
+    this.reportValidity();
+    return;
+  }
+  alert("Resume Submitted Successfully!");
+  localStorage.setItem('resumeSubmitted', 'true');
+  window.location.href = "jobs.html";
+});
+</script>
 
     </main>
     <footer class="floo">
