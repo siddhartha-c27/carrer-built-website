@@ -254,4 +254,13 @@ body{
 }.steps_card:nth-child(4)  span{
     color: chocolate;
     background-color: aliceblue;
-    
+ /* Phone kosam */
+@media (max-width: 768px) {
+  body {
+    display: block !important;
+  }
+  div {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+}   
