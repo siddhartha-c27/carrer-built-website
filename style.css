@@ -20,6 +20,18 @@
     margin-left: 40px;
 
 
+}@media (max-width: 768px) {
+  .hero, .hero-section {
+    height: 100vh !important;
+    min-height: 100vh !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 }
 .logo{
     font-size: 2em;
